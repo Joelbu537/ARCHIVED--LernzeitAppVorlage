@@ -29,8 +29,16 @@
         x:Name="LoginLinkBtn"
         Text="Log In" 
         Clicked="OnCounterClicked"
-            Padding="40, 10, 40, 10"
+        Padding="40, 10, 40, 10"
         HorizontalOptions="Center" />
+        <Button
+            BackgroundColor="Black"
+            TextColor="White"
+            x:Name="InfoLinkBtn"
+            Text="Informationen"
+            Clicked="OnInfoClicked"
+            Padding="40, 10, 40, 10"
+            HorizontalOptions="Center" />
     </VerticalStackLayout>
 
 </ContentPage>

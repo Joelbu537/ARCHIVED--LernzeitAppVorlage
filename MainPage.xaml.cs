@@ -13,6 +13,10 @@
         {
             await Navigation.PushAsync(new LoginPage());
         }
+        private async void OnInfoClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new InfoPage());
+        }
     }
 
 }
