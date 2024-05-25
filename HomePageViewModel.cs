@@ -37,8 +37,9 @@ namespace LernzeitApp
             // Hier fügst du deine Ereignisse zur Liste hinzu
             YourEventList = new List<YourEvent>
             {
-                new YourEvent { StartTime = "09:00", Location = "Raum A" },
-                new YourEvent { StartTime = "10:30", Location = "Raum B" },
+                new YourEvent { StartTime = "09:00", Location = "Raum A"},
+                new YourEvent { StartTime = "10:30", Location = "Raum B"},
+                new YourEvent { StartTime = "15:45", Location = "Raum D"}
                 // Weitere Ereignisse nach Bedarf hinzufügen
             };
         }

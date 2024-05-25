@@ -13,7 +13,7 @@ namespace LernzeitApp
             try
             {
                 TcpClient client = new TcpClient();
-                client.Connect(IPAddress.Parse("127.0.0.1"), 33533);
+                //client.Connect(IPAddress.Parse("127.0.0.1"), 33533);
             }
             catch (Exception ex)
             {
