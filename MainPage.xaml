@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LernzeitApp.MainPage"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout
+    Padding="30,0"
+    Spacing="30">
+        <Image
+            Source="Logo_schrift.png"
+            Aspect="AspectFit"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            MaximumWidthRequest="330"
+            MaximumHeightRequest="91"
+            />
+        <Label
+        Text="Wilkommen zu &#x0A; NAME"
+        Margin="0, 100, 0 ,0"
+        Style="{StaticResource Headline}"
+        SemanticProperties.HeadingLevel="Level1" 
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+
+        <Button
+        BackgroundColor="Black"
+        TextColor="White"
+        x:Name="LoginLinkBtn"
+        Text="Log In" 
+        Clicked="OnCounterClicked"
+            Padding="40, 10, 40, 10"
+        HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+</ContentPage>
