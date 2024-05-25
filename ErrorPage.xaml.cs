@@ -1,16 +1,11 @@
 namespace LernzeitApp;
 
-public partial class HomePage : ContentPage
+public partial class ErrorPage : ContentPage
 {
-	public HomePage()
+	public ErrorPage()
 	{
 		InitializeComponent();
-        BindingContext = new HomePageViewModel();
-    }
-	private async void OnBtnClicked(object sender, EventArgs e)
-	{
-        await Navigation.PushAsync(new ModulOverviewPage());
-    }
+	}
     protected override void OnAppearing()
     {
         base.OnAppearing();

@@ -1,21 +1,44 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LernzeitApp.HomePage"
              Title="HomePage"
              Shell.NavBarIsVisible="False">
-    <VerticalStackLayout>
-        <Label 
-            Text="Under construction!"
-            Style="{StaticResource Headline}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button
-            Text="DEBUG"
-            HorizontalOptions="Center"
-            BackgroundColor="Black"
-            TextColor="White"
-            x:Name="ModulBtn"
-            Clicked="OnBtnClicked"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                Text="Under construction!"
+                Style="{StaticResource Headline}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Button
+                Text="DEBUG"
+                HorizontalOptions="Center"
+                BackgroundColor="Black"
+                TextColor="White"
+                x:Name="ModulBtn"
+                Clicked="OnBtnClicked"/>
+            <CollectionView ItemsSource="{Binding YourEventList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            BackgroundColor="Wheat"
+                            Margin="5, 10, 0, 10">
+                            <Label
+                                Margin="5"
+                                Text="{Binding StartTime}"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                            <Label
+                                Margin="5"
+                                Text="{Binding Location}"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
