@@ -30,6 +30,7 @@
                             <Label
                                 Text="{Binding Name}"
                                 Grid.Row="0"
+                                Grid.ColumnSpan="2"
                                 VerticalOptions="Center"
                                 HorizontalOptions="Center"
                                 FontSize="24"
