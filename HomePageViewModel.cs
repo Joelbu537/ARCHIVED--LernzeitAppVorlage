@@ -34,13 +34,24 @@ namespace LernzeitApp
 
         public HomePageViewModel()
         {
-            // Hier fügst du deine Ereignisse zur Liste hinzu
+            //Remote Liste aus DB abrufen und verarbeiten
             YourEventList = new List<YourEvent>
             {
                 new YourEvent { StartTime = "09:00", Location = "Raum A"},
                 new YourEvent { StartTime = "10:30", Location = "Raum B"},
-                new YourEvent { StartTime = "15:45", Location = "Raum D"}
-                // Weitere Ereignisse nach Bedarf hinzufügen
+                new YourEvent { StartTime = "15:00", Location = "Raum D"},
+                new YourEvent { StartTime = "12:55", Location = "Raum A"},
+                new YourEvent { StartTime = "14:45", Location = "Raum D"},
+                new YourEvent { StartTime = "12:4", Location = "Raum E"},
+                new YourEvent { StartTime = "15:05", Location = "Raum A"},
+                new YourEvent { StartTime = "17:30", Location = "Raum C"},
+                new YourEvent { StartTime = "9:00", Location = "Raum D"},
+                new YourEvent { StartTime = "15:05", Location = "Raum B"},
+                new YourEvent { StartTime = "18:00", Location = "Raum B"},
+                new YourEvent { StartTime = "16:50", Location = "Raum E"},
+                new YourEvent { StartTime = "07:50", Location = "Raum A"},
+                new YourEvent { StartTime = "12:30", Location = "Raum C"},
+                new YourEvent { StartTime = "10:30", Location = "Raum E"}
             };
         }
     }

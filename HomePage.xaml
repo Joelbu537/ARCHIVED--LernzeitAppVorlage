@@ -5,11 +5,6 @@
              Shell.NavBarIsVisible="True">
     <ScrollView>
         <VerticalStackLayout>
-            <Label 
-                Text="Under construction!"
-                Style="{StaticResource Headline}"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
             <Button
                 Text="DEBUG"
                 HorizontalOptions="Center"
