@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
@@ -6,7 +7,7 @@ namespace LernzeitApp
 {
     public partial class MainPage : ContentPage
     {
-        public const string VERSION = "0.4.0";
+        public const string VERSION = "0.5.0";
 
         public MainPage()
         {
@@ -20,7 +21,7 @@ namespace LernzeitApp
                 byte[] verify_message = Encoding.UTF8.GetBytes(VERSION);
                 stream.Write(verify_message, 0, verify_message.Length);
                 */
-                
+
             }
             catch (Exception ex)
             {

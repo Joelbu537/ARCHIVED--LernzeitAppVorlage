@@ -14,17 +14,23 @@
             HorizontalOptions="Start"
             />
         <Label 
-            Text="Geleitet von: "
+            Text=""
+            x:Name="EventNameLabel"
             Margin="0, 30, 0, 0"
             VerticalOptions="Center" 
+            FontSize="18"
             HorizontalOptions="Center" />
         <Label 
-            Text="Ort: "
-             VerticalOptions="Center" 
+            Text=""
+            x:Name="EventLocationLabel"
+            VerticalOptions="Center" 
+            FontSize="18"
             HorizontalOptions="Center" />
         <Label 
-             Text="Zeitraum: "
-             VerticalOptions="Center" 
+            Text=""
+            x:Name="EventBeginningLabel"
+            VerticalOptions="Center" 
+            FontSize="18"
             HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

@@ -5,19 +5,15 @@
              Shell.NavBarIsVisible="True">
     <ScrollView>
         <VerticalStackLayout>
-            <Button
-                Text="DEBUG"
-                HorizontalOptions="Center"
-                BackgroundColor="Black"
-                TextColor="White"
-                x:Name="ModulBtn"
-                Clicked="OnBtnClicked"/>
             <CollectionView ItemsSource="{Binding YourEventList}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid
                             BackgroundColor="Wheat"
                             Margin="5, 10, 0, 10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnEventTapped"/>
+                            </Grid.GestureRecognizers>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />

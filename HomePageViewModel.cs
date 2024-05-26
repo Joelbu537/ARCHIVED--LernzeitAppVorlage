@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace LernzeitApp
 {
-    public class YourEvent : INotifyPropertyChanged
+    public class Ereigniss : INotifyPropertyChanged
     {
         private string _name;
         public string Name
@@ -36,28 +36,23 @@ namespace LernzeitApp
 
     public class HomePageViewModel
     {
-        public List<YourEvent> YourEventList { get; set; }
+        public List<Ereigniss> YourEventList { get; set; }
 
         public HomePageViewModel()
         {
             //Remote Liste aus DB abrufen und verarbeiten
-            YourEventList = new List<YourEvent>
+            YourEventList = new List<Ereigniss>
             {
-                new YourEvent { Name = "Schach-AG", StartTime = "09:00", Location = "Raum A"},
-                new YourEvent { Name = "Schule ohne Rassismus", StartTime = "10:30", Location = "Raum B"},
-                new YourEvent { Name= "Philosophie", StartTime = "15:00", Location = "Raum D"},
-                new YourEvent { Name="Mathe-Lernzeit", StartTime = "12:55", Location = "Raum A"},
-                new YourEvent { StartTime = "14:45", Location = "Raum D"},
-                new YourEvent { StartTime = "12:4", Location = "Raum E"},
-                new YourEvent { StartTime = "15:05", Location = "Raum A"},
-                new YourEvent { StartTime = "17:30", Location = "Raum C"},
-                new YourEvent { StartTime = "9:00", Location = "Raum D"},
-                new YourEvent { StartTime = "15:05", Location = "Raum B"},
-                new YourEvent { StartTime = "18:00", Location = "Raum B"},
-                new YourEvent { StartTime = "16:50", Location = "Raum E"},
-                new YourEvent { StartTime = "07:50", Location = "Raum A"},
-                new YourEvent { StartTime = "12:30", Location = "Raum C"},
-                new YourEvent { StartTime = "10:30", Location = "Raum E"}
+                new Ereigniss { Name = "Schach-AG", StartTime = "09:00", Location = "Raum A"},
+                new Ereigniss { Name = "Schule ohne Rassismus", StartTime = "10:30", Location = "Raum B"},
+                new Ereigniss { Name= "Philosophie", StartTime = "15:00", Location = "Raum D"},
+                new Ereigniss { Name="Mathe-Lernzeit", StartTime = "12:55", Location = "Raum A"},
+                new Ereigniss { StartTime = "14:45", Location = "Raum D"},
+                new Ereigniss { StartTime = "12:4", Location = "Raum E"},
+                new Ereigniss { StartTime = "15:05", Location = "Raum A"},
+                new Ereigniss { StartTime = "17:30", Location = "Raum C"},
+                new Ereigniss { StartTime = "9:00", Location = "Raum D"},
+                new Ereigniss { StartTime = "15:05", Location = "Raum B"}
             };
         }
     }
