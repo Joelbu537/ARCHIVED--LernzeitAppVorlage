@@ -13,11 +13,13 @@ namespace LernzeitApp
             InitializeComponent();
             try
             {
+                /*
                 TcpClient client = new TcpClient();
                 client.Connect(IPAddress.Parse("127.0.0.1"), 33533);
                 NetworkStream stream = client.GetStream();
                 byte[] verify_message = Encoding.UTF8.GetBytes(VERSION);
                 stream.Write(verify_message, 0, verify_message.Length);
+                */
                 
             }
             catch (Exception ex)
