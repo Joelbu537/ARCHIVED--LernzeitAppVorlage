@@ -18,6 +18,7 @@
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -58,6 +59,22 @@
                             <Label
                                 Text="{Binding Location}"
                                 Grid.Row="2"
+                                Grid.Column="1"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                FontSize="18"
+                                />
+                            <Label
+                                Text="Freie Plaetze:"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                FontSize="18"
+                                />
+                            <Label
+                                Text="{Binding FreeSlots}"
+                                Grid.Row="3"
                                 Grid.Column="1"
                                 VerticalOptions="Center"
                                 HorizontalOptions="Center"

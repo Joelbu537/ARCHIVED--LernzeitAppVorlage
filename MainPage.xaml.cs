@@ -7,7 +7,7 @@ namespace LernzeitApp
 {
     public partial class MainPage : ContentPage
     {
-        public const string VERSION = "0.5.1";
+        public const string VERSION = "0.5.2";
 
         public MainPage()
         {

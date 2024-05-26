@@ -25,6 +25,18 @@ namespace LernzeitApp
             get { return _location; }
             set { _location = value; OnPropertyChanged(); }
         }
+        private string _freeSlots;
+        public string FreeSlots
+        {
+            get
+            {
+                { return _freeSlots; }
+            }
+            set
+            {
+                _freeSlots = value; OnPropertyChanged();
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -43,8 +55,8 @@ namespace LernzeitApp
             //Remote Liste aus DB abrufen und verarbeiten
             YourEventList = new List<Ereigniss>
             {
-                new Ereigniss { Name = "Schach-AG", StartTime = "09:00", Location = "Raum A"},
-                new Ereigniss { Name = "Schule ohne Rassismus", StartTime = "10:30", Location = "Raum B"},
+                new Ereigniss { Name = "Schach-AG", StartTime = "09:00", Location = "Raum A", FreeSlots = "8"},
+                new Ereigniss { Name = "Schule ohne Rassismus", StartTime = "10:30", Location = "Raum B", FreeSlots = "3"},
                 new Ereigniss { Name= "Philosophie", StartTime = "15:00", Location = "Raum D"},
                 new Ereigniss { Name="Mathe-Lernzeit", StartTime = "12:55", Location = "Raum A"},
                 new Ereigniss { StartTime = "14:45", Location = "Raum D"},
