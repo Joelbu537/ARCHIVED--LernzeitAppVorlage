@@ -10,12 +10,28 @@
             Style="{StaticResource Headline}"
             TextColor="Red"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            />
         <Label
-            Text="Was du tun kannst:&#x0A;Überprüfe deine Internetverbindung und starte die App neu!&#x0A;Prüfe, ob ein Update verfügbar ist!&#x0A;Wende dich an einen Administrator!"
-            Margin="10"
+            Text="Was du tun kannst:&#x0A;Internetverbindung überprüfen&#x0A;und App neu starten!&#x0A;Auf Updates prüfen!&#x0A;Administrator kontaktieren!"
+            Margin="0, 10, 10, 10"
             FontSize="22"
             HorizontalOptions="Center"
+            VerticalOptions="Center"
+            />
+        <Label
+            Text="Fehlerbeschreibung für Administratoren"
+            Margin="5, 30, 5, 0"
+            FontSize="18"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            />
+        <Label
+            Text="Can't display error"
+            x:Name="ErrorLabel"
+            Margin="5, 0, 5, 0"
+            FontSize="15"
+            HorizontalOptions="Start"
             VerticalOptions="Center"
             />
     </VerticalStackLayout>
