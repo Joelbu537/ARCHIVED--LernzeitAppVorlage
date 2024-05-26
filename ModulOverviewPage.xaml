@@ -16,21 +16,21 @@
         <Label 
             Text=""
             x:Name="EventNameLabel"
-            Margin="0, 30, 0, 0"
+            Margin="0, 15, 0, 0"
             VerticalOptions="Center" 
-            FontSize="18"
+            FontSize="33"
             HorizontalOptions="Center" />
         <Label 
             Text=""
             x:Name="EventLocationLabel"
             VerticalOptions="Center" 
-            FontSize="18"
+            FontSize="22"
             HorizontalOptions="Center" />
         <Label 
             Text=""
             x:Name="EventBeginningLabel"
             VerticalOptions="Center" 
-            FontSize="18"
+            FontSize="22"
             HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
