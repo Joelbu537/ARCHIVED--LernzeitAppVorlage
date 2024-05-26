@@ -32,5 +32,21 @@
             VerticalOptions="Center" 
             FontSize="22"
             HorizontalOptions="Center" />
+        <Button
+            Text="Teilnehmen"
+            TextColor="White"
+            BackgroundColor="Black"
+            FontSize="18"
+            Margin="20, 5, 20, 5"
+            Clicked="OnParticipateClicked"
+            />
+        <Label
+            x:Name="ButtonError"
+            Text=""
+            TextColor="Red"
+            FontSize="16"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
     </VerticalStackLayout>
 </ContentPage>

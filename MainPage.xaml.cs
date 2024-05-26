@@ -7,7 +7,8 @@ namespace LernzeitApp
 {
     public partial class MainPage : ContentPage
     {
-        public const string VERSION = "0.5.2";
+        public const string VERSION = "0.5.3";
+        //Stunden in diesem Projekt: 10
 
         public MainPage()
         {

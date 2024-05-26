@@ -18,6 +18,18 @@ namespace LernzeitApp
             get { return _startTime; }
             set { _startTime = value; OnPropertyChanged(); }
         }
+        private string _endTime;
+        public string EndTime//Not implemented
+        {
+            get
+            {
+                return _endTime;
+            }
+            set
+            {
+                _endTime = value; OnPropertyChanged();
+            }
+        }
 
         private string _location;
         public string Location
@@ -30,11 +42,35 @@ namespace LernzeitApp
         {
             get
             {
-                { return _freeSlots; }
+                return _freeSlots;
             }
             set
             {
                 _freeSlots = value; OnPropertyChanged();
+            }
+        }
+        private string _maxSlots;
+        public string MaxSlots //Not implemented
+        {
+            get
+            {
+                return _maxSlots;
+            }
+            set
+            {
+                _maxSlots = value; OnPropertyChanged();
+            }
+        }
+        private int _id;
+        public int Id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                _id = value; OnPropertyChanged();
             }
         }
 
