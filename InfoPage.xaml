@@ -11,9 +11,10 @@
             HorizontalOptions="Center"
             Margin="0, 10, 0, 20"/>
         <Label
-            Text="Entwickelt von Jork Buchholz"
+            Text="Entwickelt 2024&#x0A;von Jork Buchholz&#x0A;für das Lise-Meitner Gymnasium Leverkusen&#x0A;"
             VerticalOptions="Center"
             HorizontalOptions="Center"
+            Margin = "7, 10, 7, 10"
         />
     </VerticalStackLayout>
 </ContentPage>
