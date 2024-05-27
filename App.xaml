@@ -5,6 +5,8 @@
              x:Class="LernzeitApp.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Image x:Key="appicon_android" Source="Images/appicon_android.png" />
+            <Image x:Key="appicon_ios" Source="Images/appicon_ios.png" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
