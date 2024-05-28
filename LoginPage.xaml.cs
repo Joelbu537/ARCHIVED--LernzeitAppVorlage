@@ -29,7 +29,7 @@ public partial class LoginPage : ContentPage
 
             // Verbindung zu Datenbank aufbauen und Logindaten verifizieren
             //int acces = Verify(email, hash); //1 = student 2 = teacher 3 = wrong pwd
-            int acces = 0; //DEBUG
+            int acces = 1; //DEBUG
             if(acces == -1)
             {
                 Exception ex = new Exception("Data integrity compromised!");
@@ -52,11 +52,6 @@ public partial class LoginPage : ContentPage
                 Exception ex = new Exception("Date intergrity compromised!");
                 TriggerError(ex);
             }
-            // Navigiere zur HomePage
-            await Navigation.PushAsync(new HomePage());
-
-            // Entferne die LoginPage aus der Navigationshistorie
-            Navigation.RemovePage(this);
         }
         else
         {

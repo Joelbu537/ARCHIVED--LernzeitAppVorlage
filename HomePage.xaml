@@ -2,10 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LernzeitApp.HomePage"
              Title="Heutige Module"
-             BackgroundColor="White"
              Shell.NavBarIsVisible="True">
     <ScrollView>
         <VerticalStackLayout>
+            <Label
+                Text="Wenn dieser Text lesbar ist, verwendest du den Dark Mode deines Geräts,&#x0A;was die Darstellung der App negativ beeinflusst und Texte unleserlich macht!"
+                TextColor="White"
+                FontSize="10"
+                 />
             <CollectionView ItemsSource="{Binding YourEventList}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
