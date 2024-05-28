@@ -28,15 +28,31 @@ public partial class LoginPage : ContentPage
             GC.Collect();
             password = "";
 
-            // Verbindung zu Datenbanktool aufbauen und Logindaten verifizieren
-            //int acces = Verify(email, hash);
-            int acces = 0; //0 = student 1 = teacher
+            // Verbindung zu Datenbank aufbauen und Logindaten verifizieren
+            //int acces = Verify(email, hash); //1 = student 2 = teacher 3 = wrong pwd
+            int acces = 0; //DEBUG
             if(acces == -1)
             {
                 Exception ex = new Exception("Data integrity compromised!");
                 TriggerError(ex);
             }
-
+            if (acces == 1)
+            {
+                await Navigation.PushAsync(new HomePage());
+            }
+            else if (acces == 2)
+            {
+                //Lerhermenü laden!
+            }
+            else if(acces == 0)
+            {
+                viewModel.ErrorMessage = "Das Password ist falsch!";
+            }
+            else
+            {
+                Exception ex = new Exception("Date intergrity compromised!");
+                TriggerError(ex);
+            }
             // Navigiere zur HomePage
             await Navigation.PushAsync(new HomePage());
 
@@ -74,6 +90,10 @@ public partial class LoginPage : ContentPage
                     else if (content[1] == "1")
                     {
                         return 1;
+                    }
+                    else if (content[1] == "2")
+                    {
+                        return 2;
                     }
                     else
                     {
