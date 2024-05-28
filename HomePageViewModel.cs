@@ -93,14 +93,13 @@ namespace LernzeitApp
             {
                 new Ereigniss { Name = "Schach-AG", StartTime = "09:00", Location = "Raum A", FreeSlots = "8"},
                 new Ereigniss { Name = "Schule ohne Rassismus", StartTime = "10:30", Location = "Raum B", FreeSlots = "3"},
-                new Ereigniss { Name= "Philosophie", StartTime = "15:00", Location = "Raum D"},
-                new Ereigniss { Name="Mathe-Lernzeit", StartTime = "12:55", Location = "Raum A"},
-                new Ereigniss { StartTime = "14:45", Location = "Raum D"},
-                new Ereigniss { StartTime = "12:4", Location = "Raum E"},
-                new Ereigniss { StartTime = "15:05", Location = "Raum A"},
-                new Ereigniss { StartTime = "17:30", Location = "Raum C"},
-                new Ereigniss { StartTime = "9:00", Location = "Raum D"},
-                new Ereigniss { StartTime = "15:05", Location = "Raum B"}
+                new Ereigniss { Name= "Philosophie", StartTime = "15:00", Location = "Raum D", FreeSlots = "13"},
+                new Ereigniss { Name="Mathe-Lernzeit", StartTime = "12:55", Location = "Raum A", FreeSlots = "6"},
+                new Ereigniss { StartTime = "14:45", Location = "Raum D", Name = "Roboter-AG", FreeSlots = "1"},
+                new Ereigniss { StartTime = "12:4", Location = "Raum E", Name = "Deutsch ?-Stunde", FreeSlots = "10"},
+                new Ereigniss { StartTime = "15:05", Location = "Raum A", Name = "SV-Sitzung", FreeSlots = "0"},
+                new Ereigniss { StartTime = "17:30", Location = "Raum C", Name = "Sanitäter-Ausbildung", FreeSlots = "6"},
+                new Ereigniss { StartTime = "9:00", Location = "Raum D", Name = "Latein-Lernzeit", FreeSlots = "15"}
             };
         }
     }
