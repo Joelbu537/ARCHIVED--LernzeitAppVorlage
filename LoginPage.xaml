@@ -3,22 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LernzeitApp.LoginPage"
              Title="Log In"
-             BackgroundColor="white">
+             BackgroundColor="white"
+             Shell.BackgroundColor="White">
     <VerticalStackLayout Margin="20">
         <Label 
             Text="Log In"
             Style="{StaticResource Headline}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Entry
-            Margin="20"
-            Placeholder="vorname.nachname@lmg.schulen-lev.de"
-            Text="{Binding InputEmail}"/>
-        <Entry
-            Margin="20"
-            Placeholder="Passwort"
-            IsPassword="True"
-            Text="{Binding InputPassword}"/>
+        <Border Stroke="Black" StrokeThickness="2">
+            <Entry Margin="10" Placeholder="vorname.nachname@lmg.schulen-lev.de" Text="{Binding InputEmail}" FontSize="13" TextColor="Black" />
+        </Border>
+        <Border Stroke="Black" StrokeThickness="2">
+            <Entry Margin="10" Placeholder="Passwort" IsPassword="True" Text="{Binding InputPassword}" TextColor="Black" />
+        </Border>
+
         <Label
             Margin="10"
             TextColor="Red"

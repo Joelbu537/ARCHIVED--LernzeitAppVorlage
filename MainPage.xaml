@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LernzeitApp.MainPage"
              BackgroundColor="White"
+             Shell.NavBarHasShadow="False"
              Shell.NavBarIsVisible="False">
     <VerticalStackLayout
     Padding="30,0"
