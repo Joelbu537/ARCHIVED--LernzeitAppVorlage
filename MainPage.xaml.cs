@@ -7,7 +7,6 @@ namespace LernzeitApp
 {
     public partial class MainPage : ContentPage
     {
-        public const string VERSION = "0.5.4.1";
         //Stunden in diesem Projekt: 12
 
         public MainPage()
@@ -22,7 +21,6 @@ namespace LernzeitApp
                 byte[] verify_message = Encoding.UTF8.GetBytes(VERSION);
                 stream.Write(verify_message, 0, verify_message.Length);
                 */
-
             }
             catch (Exception ex)
             {
@@ -43,5 +41,16 @@ namespace LernzeitApp
             await Navigation.PushAsync(new ErrorPage(exception));
         }
     }
-
+    public class AppInfo
+    {
+        public string Version { get; set; }
+        public string ServerIP { get; set; }
+        public int ServerPort { get; set; }
+        public AppInfo()
+        {
+            Version = "0.5.5";
+            ServerIP = "127.0.0.1";
+            ServerPort = 33533;
+        }
+    }
 }
