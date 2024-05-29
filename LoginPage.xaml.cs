@@ -41,7 +41,7 @@ public partial class LoginPage : ContentPage
             }
             else if (acces == 2)
             {
-                //Lerhermenü laden!
+                await Navigation.PushAsync(new TeacherHomePage());//MUSS ERSTELLT WERDEN!
             }
             else if(acces == 0)
             {
