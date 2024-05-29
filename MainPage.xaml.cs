@@ -21,6 +21,7 @@ namespace LernzeitApp
                 byte[] verify_message = Encoding.UTF8.GetBytes(VERSION);
                 stream.Write(verify_message, 0, verify_message.Length);
                 */
+                //SUPPORTTICKETS SENDED!
             }
             catch (Exception ex)
             {

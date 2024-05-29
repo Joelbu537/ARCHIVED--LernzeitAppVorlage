@@ -32,6 +32,7 @@
                             <Label
                                 Text="{Binding Name}"
                                 Grid.Row="0"
+                                TextColor="Black"
                                 Grid.ColumnSpan="2"
                                 VerticalOptions="Center"
                                 HorizontalOptions="Center"
@@ -39,6 +40,7 @@
                                 />
                             <Label
                                 Text="Uhrzeit:"
+                                TextColor="Black"
                                 Grid.Row="1"
                                 Grid.Column="0"
                                 VerticalOptions="Center"
@@ -48,6 +50,7 @@
                             <Label 
                                 Text="{Binding StartTime}"
                                 Grid.Row="1"
+                                TextColor="Black"
                                 Grid.Column="1"
                                 VerticalOptions="Center"
                                 HorizontalOptions="Center"
@@ -55,6 +58,7 @@
                                 />
                             <Label
                                 Text="Raum:"
+                                TextColor="Black"
                                 Grid.Row="2"
                                 Grid.Column="0"
                                 VerticalOptions="Center"
@@ -63,6 +67,7 @@
                                 />
                             <Label
                                 Text="{Binding Location}"
+                                TextColor="Black"
                                 Grid.Row="2"
                                 Grid.Column="1"
                                 VerticalOptions="Center"
@@ -71,6 +76,7 @@
                                 />
                             <Label
                                 Text="Freie Plaetze:"
+                                TextColor="Black"
                                 Grid.Row="3"
                                 Grid.Column="0"
                                 VerticalOptions="Center"
@@ -79,6 +85,7 @@
                                 />
                             <Label
                                 Text="{Binding FreeSlots}"
+                                TextColor="Black"
                                 Grid.Row="3"
                                 Grid.Column="1"
                                 VerticalOptions="Center"

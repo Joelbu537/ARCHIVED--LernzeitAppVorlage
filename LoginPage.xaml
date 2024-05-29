@@ -11,10 +11,10 @@
             Style="{StaticResource Headline}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Border Stroke="Black" StrokeThickness="2">
+        <Border Stroke="Black" StrokeThickness="1" Margin="5">
             <Entry Margin="10" Placeholder="vorname.nachname@lmg.schulen-lev.de" Text="{Binding InputEmail}" FontSize="13" TextColor="Black" />
         </Border>
-        <Border Stroke="Black" StrokeThickness="2">
+        <Border Stroke="Black" StrokeThickness="1" Margin="5">
             <Entry Margin="10" Placeholder="Passwort" IsPassword="True" Text="{Binding InputPassword}" TextColor="Black" />
         </Border>
 
