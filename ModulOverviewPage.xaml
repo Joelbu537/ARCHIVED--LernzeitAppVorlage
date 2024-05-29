@@ -14,7 +14,6 @@
         <Label 
             Text=""
             x:Name="EventNameLabel"
-            FontSize="30"
             Margin="0, 15, 0, 0"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
@@ -35,8 +34,8 @@
             Text="Teilnehmen"
             FontSize="18"
             Margin="20, 5, 20, 5"
-            Clicked="OnParticipateClicked"
-            />
+            Clicked="OnParticipateClicked"/>
+        />
         <Label
             x:Name="ButtonError"
             Text=""
