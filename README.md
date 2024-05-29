@@ -11,3 +11,6 @@ und bestätigen, ob sie anwesend sind.
 ### Administrator
 Administratoren entfernen und fügen Lernzeiten hinzu, verwalten die anderen Benutzerkonten und haben uneingeschränkten zugriff auf die Datenbank.
 Diese Rolle solte nur Lehrern mit Wissen im Bereich Informatik und ranghohen Individuen zugeteilt werden.
+Administratoren werden bis auf weiteres nicht über die App selbst zugreiffen, sondern die ändrrungen direkt an der Datenbank vornehmen.
+
+Schüler und Lehrer verwenden die gleiche App, die Zugriffsstufe wird in der Datenbank festgestellt. Die App ruft anhand der Informationen verschieden Overlays auf.
