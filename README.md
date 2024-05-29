@@ -14,3 +14,10 @@ Diese Rolle solte nur Lehrern mit Wissen im Bereich Informatik und ranghohen Ind
 Administratoren werden bis auf weiteres nicht über die App selbst zugreiffen, sondern die ändrrungen direkt an der Datenbank vornehmen.
 
 Schüler und Lehrer verwenden die gleiche App, die Zugriffsstufe wird in der Datenbank festgestellt. Die App ruft anhand der Informationen verschieden Overlays auf.
+
+## Verify-Methode
+Die Verify-Methode sendet Nutzerdaten an den Server, und gibt einen Status zurück
+Stati:
+0 = Falsches Password/Falsche Email
+1 = Schülerkonto verifiziert
+2 = Lehrerkonto  verifiziert
